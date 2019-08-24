@@ -1,2 +1,6 @@
-# vegan-restaurant
-Redesign for a local vegan joint in Virginia. Not the official site, but my dream vegan restaurant UI/UX for a favourite of mine
+# "Vegan Meats" restaurant site
+Redesign for a local vegan joint in Virginia. 
+
+# Dependencies
+• Bootstrap
+• Flask
