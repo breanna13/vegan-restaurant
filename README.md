@@ -2,5 +2,5 @@
 Redesign for a local vegan joint in Virginia. 
 
 # Dependencies
-• Bootstrap
+• Bootstrap <br>
 • Flask
