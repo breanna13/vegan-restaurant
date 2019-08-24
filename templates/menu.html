@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header Area Starts -->
+	<header class="header" id="topheader">
+        <a href="{{ url_for ('home')}}"><img src = "https://i.postimg.cc/kXzJRP3J/vegannaomis.jpg" height = "80" width = "80"></a>
+        <span><font font color=black><a href= "{{ url_for ('about')}}">About</a></font></span>
+        <span><font font color=black><a href= "{{ url_for ('menu')}}">Menu</a></font></span>
+        <span><font font color=black><a href= "{{ url_for ('contact')}}">Contact</a></font></span>
+    </header>
+<!-- Header Area End -->
+
+<!--Menu block-->
+	<div class="parallax-one">
+		<div class="fadein">
+  	<div class="col">
+  		<center>
+  			<font color=#39a770 font-family=Lucida-Grande style="font-size:500%;"><b>Menu</b></font>
+  		</center>
+	</div>
+
+</div>		
+</div>	
+<!-- Menu blcok End -->
+
+<!--Menus Home Start-->
+	<div class="parallax-two">
+		<div class="fadein">
+  	<div class="col">
+  		<div class="container">
+
+        <center>
+          <h1><font color=grey font=Lucida-Grande style="font-size:150%;">Breakfast (8:00 ~ 10:45)<br></font><p></h1>
+
+          <h2>
+          <font color=grey font=Lucida-Grande style="font-size:100%;">Waffles<br><font style="font-size:80%;"><i>2 pieces of vegan chick'n</i></font><br>$8.50
+          <br>Chick'n<br><font style="font-size:80%;"><i>Two pieces of vegan chick'n</i></font><br>$7.25  
+          <br>Chick'n & Waffles<br><font style="font-size:80%;"><i>Two pieces of vegan chick'n and 2 waffles</i></font><br>$13.50
+          <br>Shrimp & Grits<br><font style="font-size:80%;"><i>Sauteed shrimp over grits</i></font><br>$10.00
+          <br>Waffles, Sausage, and Eggs<br><font style="font-size:80%;"><i>Two waffles, two sausages, and scrambled eggs</i></font><br>$11.00
+          <br>Bac'un<br><font style="font-size:80%;"><i>Three pieces of bac'un</i></font><br>$2.25  
+          </font></h2>
+
+            <h1><font color=grey font=Lucida-Grande style="font-size:150%;">Lunch (11:00 ~ 14:45)<br></font><p></h1>
+
+            <h2>
+            <font color=grey font=Lucida-Grande style="font-size:100%;">Na’Vegan Chick’n Meal<br><font style="font-size:80%;"><i>2 pieces of vegan chick'n, and your choice of one side</i></font><br>$8.00 Extra sauce: +$1.00
+            <br>Kamare Crab Cake and Shrimp<br><font style="font-size:80%;"><i>One crab cake, shrimp, and your choice of one side</i></font><br>$6.50 
+            <br>Na’Vegan Chick’n & Veggie Rice<br><font style="font-size:80%;"><i>Four pieces of chick'n, rice, and your choice of one side</i></font><br>$12.00 Extra sauce: +$1.00
+            <br>Protein Wings<br><font style="font-size:80%;"><i>Eight protein wings with your choice of: original, jerk, hot, curry, or orange Asian zing, and your choice of one side</i></font><br>$10.00 Extra sauce: +$1.00
+            <br>Shrimp Pasta Bowl<br><font style="font-size:80%;"><i>Eliza shrimp tossed in seafood cream sauce, and your choice of one side</i></font><br>$10.00
+            <br>Vegetable Fried Rice<br><font style="font-size:80%;"><i>Vegetable fried rice tossed in sauteed vegetable medley, and your choice of one side</i></font><br>$9.00
+            </font></h2>
+
+
+            <h1><font color=grey font=Lucida-Grande style="font-size:150%;">Dinner (15:00 ~ 17:45)<br></font><p></h1>
+
+            <h2>
+            <font color=grey font=Lucida-Grande style="font-size:100%;">Curry Chick’n Meal<br><font style="font-size:80%;"><i>3 pieces of vegan chick'n, curry chickpeas, rice, plantains, and your choice of two sides</i></font><br>L: $15.00 S: $10.00 Extra sauce: +$1.00
+            <br>Kamare Crab Cake Meal<br><font style="font-size:80%;"><i>Three crab cakes, rice, plantains, and your choice of two sides</i></font><br>$15.00 Extra sauce: +$1.00
+            <br>Chick'n Meal<br><font style="font-size:80%;"><i>Three pieces of original, jerk, hot, curry, or orange Asian zing chick'n, rice, plantains, with your choice of two sides</i></font><br>L: $15.00 S: $10.00 Extra sauce: +$1.00
+            <br>Eliza Shrimp Meal<br><font style="font-size:80%;"><i>Three pieces of shrimp topped with vegetable and seafood cream sauce, rice, plantains, and your choice of two sides</i></font><br>L: $15.00 S:$10.0
+            <br>Bac'un Cheeseburger<br><font style="font-size:80%;"><i>Beyond burger with lettuce, tomatoes, pickles or celery, vegan mayo, and your choice of one side</i></font><br>$9.00 Add cheese: +$1.00
+            <br>Seafood Platter<br><font style="font-size:80%;"><i>Two crab cakes, three pieces of shrimp topped with vegetables and seafood cream sauce, with rice, plantains, and your choice of two sides</i></font><br>$15.00
+            </font></h2>
+
+            <h1><font color=grey font=Lucida-Grande style="font-size:150%;">Sides</font><p></h1>
+
+            <h2>
+            <font color=grey font=Lucida-Grande style="font-size:100%;">
+            Plantains<br>$4.00
+            <br>Green Beans<br>$3.00
+            <br>Lima Beans<br>$3.00 
+            <br>Rice<br>$3.00 
+            <br>Yams<br>$3.00 
+            <br>Cabbage<br>$3.00 
+            <br>Mac & Cheese<br>$3.00 
+            <br>Navy Beans<br>$3.00 
+            <br>Sweet Corn<br>$3.00 
+            </font></h2>
+
+
+      </center>
+	</div>
+</div>
+</div>
+</div>
+<!--Menus Home End-->
+
+<!-- Footer Area Starts -->
+<div class="footer" id="footer">
+  <div class="row">
+    <div class="col-sm-6">
+  <font color=white>
+  <h2>Hours</h2>
+  Monday..........Pre-order Only <br>
+  Tuesday..........8:00~17:45 <br>
+  Wednesday..........8:00~17:45 <br>
+  Thursday..........8:00~17:45 <br>
+  Friday..........11:00~16:00 <br>
+  Saturday/Sunday..........Closed </font>
+      </div>
+
+      <div class="col-sm-6">
+  <font color=white>
+  <h2>Contact Us</h2>
+
+  <font color=white>Email</font> <br>
+  Admin@naomisveganmeats.com <br>
+
+  <font color=white>Phone</font>
+  <br>1-(888)-834-2677<br>
+
+  <font color=white>Fax</font>
+  <br>1-(888)-834-2677
+      </div>
+
+      </div>
+
+    </div>
+<!-- Footer Area End -->
+
+<!-- CSS -->
+<style type="text/css">
+
+/* Style the header */
+header { 
+  border-bottom: 1px solid #fff; 
+}
+header > h1 {
+  display: inline-block; 
+}
+header span {
+   margin-left: 200px; 
+   margin-right: 100px; 
+  }
+
+.header {
+  padding: 10px 10px;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+/*Header block end*/
+
+/*Footer Block Start*/
+.row {
+  padding-top: 20px;
+  padding-left: 60px; 
+  padding-right: 10px;
+  width: 90%;
+}
+
+body {
+  position: relative;
+  background-color: #39a770;
+}
+
+body::after { 
+  content: '';
+  display: block;
+  height: 30px; /* Set same as footer's height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #39a770;
+}
+/*Footer Block End*/
+
+/*Welcome block*/  
+ .parallax-one {
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-image: url("https://i.postimg.cc/02Z5whFS/banner-bg.jpg");background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;
+  background-color: #FEAF6A;
+ }
+/*Welcome block end*/
+
+/*About home*/  
+ .parallax-two {
+  padding-top: 70px; 
+  padding-bottom: 70px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-color: white;
+ }
+/*About home end*/
+
+/*Button start*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  width: 150px;
+  height: 70px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+/*Button end*/
+
+</style>
+
+
+
+
+
+<!-- JAVASCRIPT -->
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("topheader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

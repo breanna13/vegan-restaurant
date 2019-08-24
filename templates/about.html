@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header Area Starts -->
+	<header class="header" id="topheader">
+        <a href="{{ url_for ('home')}}"><img src = "https://i.postimg.cc/kXzJRP3J/vegannaomis.jpg" height = "80" width = "80"></a>
+        <span><font font color=black><a href= "{{ url_for ('about')}}">About</a></font></span>
+        <span><font font color=black><a href= "{{ url_for ('menu')}}">Menu</a></font></span>
+        <span><font font color=black><a href= "{{ url_for ('contact')}}">Contact</a></font></span>
+    </header>
+<!-- Header Area End -->
+
+<!--Welcome block-->
+	<div class="parallax-one">
+		<div class="fadein">
+  	<div class="col">
+  		<center>
+  			<font color=#39a770 font-family=Lucida-Grande style="font-size:500%;"><b>About</b></font>
+
+  		</center>
+	</div>
+
+</div>		
+</div>	
+<!-- Welcome blcok End -->
+
+<!--About Home Start-->
+<div class="row">
+  <div class="col-sm-6">
+  <h2><font color=grey font=Lucida-Grande style="font-size:140%;">Welcome to Naomi's Vegan Meats!</font></h2>
+  <br><p><font color=grey font=Lucida-Grande style="font-size:150%;">Naomi Vegan Meets is a delivery and catering company delivering a plant-based lifestyle to homes in the Hampton Roads. Naomi's Vegan Meats is owned and maintained by private chef Naomi Ra-El. She has been vegan for 6 years and couldn't be happier! Our staff wants to share the positive health effects of a vegan diet with our customers.</p></font>
+
+       <a href="{{ url_for ('menu')}}"><button class="button1">Order Now!</button></a>
+  </div>
+  <div class="col-sm-6">
+    <img src="https://i.postimg.cc/WzYRvTnB/welcome-bg.png" alt="Welcome" height="400" width="400">
+</div>
+</div>
+<!--About Home End-->
+
+
+
+
+<!-- CSS -->
+<style type="text/css">
+
+/* Style the header */
+header { 
+	border-bottom: 1px solid #fff; 
+}
+header > h1 {
+ 	display: inline-block; 
+}
+header span {
+	 margin-left: 200px; 
+	 margin-right: 100px; 
+	}
+
+.header {
+  padding: 10px 10px;
+  background: #fff;
+  color: #f1f1f1;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+/*Header block end*/
+
+/*Welcome block*/  
+ .parallax-one {
+ 	padding-top: 200px; 
+ 	padding-bottom: 200px; 
+ 	overflow: hidden; 
+ 	position: relative; 
+ 	width: 100%; 
+ 	background-image: url("https://i.postimg.cc/02Z5whFS/banner-bg.jpg");background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;
+ 	background-color: #FEAF6A;
+ }
+/*Welcome block end*/
+
+/*About home*/  
+ .row {
+ 	padding-top: 70px; 
+ 	padding-bottom: 70px; 
+  padding-left: 30px; 
+ 	width: 100%; 
+ 	background-color: white;
+ }
+/*About home end*/
+
+/*Button start*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+	width: 100px;
+	height: 55px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+/*Button end*/
+
+</style>
+
+
+
+
+
+<!-- JAVASCRIPT -->
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("topheader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+</html>
